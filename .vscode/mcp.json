@@ -1,0 +1,14 @@
+{
+  "servers": {
+    "mcp-base-server": {
+      "type": "stdio",
+      "command": ".venv/Scripts/python.exe",
+      "args": [
+        "-m",
+        "uvicorn",
+        "mcp_base_server.server:app",
+        "--reload"
+      ]
+    }
+  }
+}

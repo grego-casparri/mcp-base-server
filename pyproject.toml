@@ -1,0 +1,17 @@
+[project]
+name = "mcp-base-server"
+version = "0.1.0"
+description = "Robust Python MCP server base to connect to an API"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [ "mcp>=1.9.1",]
+[[project.authors]]
+name = "Gregorio Casparri"
+email = "gregorio.casparri@tecro.dev"
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+mcp-base-server = "mcp_base_server:main"
