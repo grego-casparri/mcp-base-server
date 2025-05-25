@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  mcp-server:
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    command: uvicorn src/mcp_base_server/server:app --host 0.0.0.0 --reload
